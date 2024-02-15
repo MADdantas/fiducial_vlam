@@ -27,6 +27,10 @@
   <depend>tf2_msgs</depend>
   <depend>visualization_msgs</depend>
   <depend>yaml_cpp_vendor</depend>
+  <depend>geometry2</depend> 
+  <depend>tf2</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>rclcpp_components</depend>
 
   <export>
     <build_type>ament_cmake</build_type>
