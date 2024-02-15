@@ -49,6 +49,11 @@ find_package(std_msgs REQUIRED)
 find_package(tf2_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(yaml_cpp_vendor REQUIRED)
+find_package(tf2_msgs REQUIRED)
+find_package(geometry2 REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(rclcpp_components REQUIRED)
 
 # Local includes
 include_directories(
@@ -92,6 +97,10 @@ set(VLOC_NODE_DEPS
   sensor_msgs
   std_msgs
   tf2_msgs
+  geometry2
+  tf2
+  tf2_geometry_msgs
+  rclcpp_components
   )
 
 add_library(vloc_node SHARED
@@ -139,6 +148,11 @@ set(VMAP_NODE_DEPS
   tf2_msgs
   visualization_msgs
   yaml_cpp_vendor
+  geometry2
+  tf2
+  tf2_geometry_msgs
+  rclcpp_components
+  cv_bridge
   )
 
 add_library(vmap_node SHARED
